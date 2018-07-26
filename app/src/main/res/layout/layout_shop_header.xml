@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="9dp"
+        android:src="@mipmap/leftjiantou"/>
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/horiation_background">
+        <ImageView
+            android:id="@+id/select"
+            android:layout_width="18dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="7dp"
+            android:src="@mipmap/search_icon2"/>
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="210dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="2dp"
+            android:textSize="15dp"
+            android:background="@null"
+            android:hint="在千万海外商品中搜索"/>
+
+        <ImageView
+            android:id="@+id/Xx"
+            android:layout_width="18dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="255dp"
+            android:src="@mipmap/a_3"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/diss"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="15dp"
+        android:src="@mipmap/kind_liner"/>
+</RelativeLayout>

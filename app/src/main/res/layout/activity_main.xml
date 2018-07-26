@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <include layout="@layout/horizontal_item"/>
+
+    <include layout="@layout/horizontal_item_one"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+
+        <com.example.library.AutoFlowLayout
+            android:id="@+id/auto_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></com.example.library.AutoFlowLayout>
+
+        <RelativeLayout
+            android:id="@+id/re1"
+            android:layout_below="@id/auto_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="35dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="搜索发现"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/horizontal_background_one"
+                android:gravity="center_horizontal"
+                android:paddingTop="4dp"
+                android:text="大菠萝"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/horizontal_background_one"
+                android:gravity="center_horizontal"
+                android:paddingTop="4dp"
+                android:text="大芒果"
+                android:textSize="17dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/re1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="常用分类"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/horizontal_background_two"
+                android:gravity="center_horizontal"
+                android:paddingTop="15dp"
+                android:text="大香蕉"
+                android:textSize="17dp" />
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="8dp"
+                android:layout_width="55dp"
+                android:paddingTop="15dp"
+                android:gravity="center_horizontal"
+                android:layout_height="55dp"
+                android:textSize="17dp"
+                android:text="大西瓜"
+                android:background="@drawable/horizontal_background_two"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
